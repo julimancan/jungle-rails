@@ -206,7 +206,7 @@ DEPENDENCIES
   quiet_assets
   rails (= 4.2.6)
   rails_12factor
-  rmagick
+  rmagick (~> 2.15.4)
   sass-rails (~> 5.0)
   sdoc (~> 0.4.0)
   spring
@@ -219,4 +219,4 @@ RUBY VERSION
    ruby 2.3.5p376
 
 BUNDLED WITH
-   1.16.1
+   1.17.3

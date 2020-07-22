@@ -32,7 +32,7 @@ gem 'bootstrap-sass', '~> 3.3.6'
 gem 'font-awesome-rails'
 gem 'money-rails'
 gem 'carrierwave'
-gem 'rmagick'
+gem 'rmagick', '~> 2.15.4'
 gem 'stripe'
 gem 'faker'
 
