@@ -66,14 +66,25 @@ RSpec.describe User, type: :model do
       subject1.save
       
       subject2 = User.new(
+        first_name: "Juan",
+        last_name: "Juanes",
+        email: "JuAnes@jUanes.com",
+        password: "juanes",
+        password_confirmation: "juanes")
+        expect(subject2).to be_invalid 
+      end
+      it "it is invalid for a user with a password with a length of less than 3 characters" do
+        
+        subject1 = User.new(
           first_name: "Juan",
           last_name: "Juanes",
-          email: "JuAnes@jUanes.com",
-          password: "juanes",
-          password_confirmation: "juanes")
-      expect(subject2).to be_invalid 
+          email: "juAnes@juanes.com",
+          password: "ju",
+          password_confirmation: "ju")
+          subject1.save
+          expect(subject1).to be_invalid 
+        end
     end
-  end
 
 
 end
