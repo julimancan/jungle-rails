@@ -13,7 +13,7 @@ RSpec.describe Product, type: :model do
   describe 'validations' do 
       # validates that a product is valid
      it "is valid with valid attributes" do
-      expect(subject).to be_valid
+      expect(subject).to be_valid 
      end
 
       # validates :name, presence: true
@@ -21,6 +21,7 @@ RSpec.describe Product, type: :model do
       #  smartRing
       subject.name = nil
       expect(subject).to_not be_valid
+      puts subject.errors.full_messages
       expect(subject.errors.full_messages).to include "Name can't be blank"
     end
     
