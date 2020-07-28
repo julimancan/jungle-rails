@@ -1,6 +1,6 @@
 require 'rails_helper'
 
-RSpec.feature "Visitor navigates to product page from home page", type: :feature, js: true do
+RSpec.feature "Visitor adds productsto the cart", type: :feature, js: true do
 
   # setup
   before :each do
@@ -17,12 +17,10 @@ RSpec.feature "Visitor navigates to product page from home page", type: :feature
     end 
   end
 
-  scenario "They see all the information of the product selected" do
+  scenario "Products get added to the cart when clicking Add-to-cart" do
     visit root_path
-    
-    first(".product").click_link("Details")
-
-    expect(page).to have_css 'article.product-detail', count: 1
-    save_screenshot('product_details.png')
+    first(".product").click_on "Add"
+    expect(page).to have_content('My Cart (1)')
+    save_screenshot("cart_test.png")
   end
 end
