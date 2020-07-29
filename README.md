@@ -6,13 +6,13 @@ Administrators can login and create new products, and view a dashboard and the e
 
 ## Screenshots
 ### Home/Products 
-!["Products page"](https://github.com/julimancan/tinyapp/blob/master/docs/create_new_shortUrl.JPG?raw=true)
+!["Products page"](https://github.com/julimancan/jungle-rails/blob/master/images/home_page.JPG)
 ### My Cart
-!["My Cart page"](https://github.com/julimancan/tinyapp/blob/master/docs/user_urls.JPG?raw=true)
+!["My Cart page"](https://github.com/julimancan/jungle-rails/blob/master/images/my_cart.JPG)
 ### Admin Products 
-!["Admin Producst page"](https://github.com/julimancan/tinyapp/blob/master/docs/user_urls.JPG?raw=true)
+!["Admin Producst page"](https://github.com/julimancan/jungle-rails/blob/master/images/admin_products.JPG)
 ### Admin Add A Product
-!["Add a Product Page"](https://github.com/julimancan/tinyapp/blob/master/docs/user_urls.JPG?raw=true)
+!["Add a Product Page"](https://github.com/julimancan/jungle-rails/blob/master/images/admin_add_product.JPG)
 
 ## Testing
 - RSpec
