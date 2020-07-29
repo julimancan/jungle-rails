@@ -1,7 +1,22 @@
 # Jungle
 
-A mini e-commerce application built with Rails 4.2 for purposes of teaching Rails by example.
+A mini e-commerce application built with Rails 4.2 for purposes of teaching Rails by example. Visitors of the site can see all products, view individual product details and add them to a cart. User is then able to view the contents of the cart before checking out through the Stripe Payment API.
 
+Administrators can login and create new products, and view a dashboard and the existing categories.
+
+## Screenshots
+### Home/Products 
+!["Products page"](https://github.com/julimancan/tinyapp/blob/master/docs/create_new_shortUrl.JPG?raw=true)
+### My Cart
+!["My Cart page"](https://github.com/julimancan/tinyapp/blob/master/docs/user_urls.JPG?raw=true)
+### Admin Products 
+!["Admin Producst page"](https://github.com/julimancan/tinyapp/blob/master/docs/user_urls.JPG?raw=true)
+### Admin Add A Product
+!["Add a Product Page"](https://github.com/julimancan/tinyapp/blob/master/docs/user_urls.JPG?raw=true)
+
+## Testing
+- RSpec
+- Capybara and Poltergeist
 
 ## Setup
 
